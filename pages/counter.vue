@@ -9,14 +9,6 @@
       <span>{{ count }}</span>
     </section>
 
-    <section id="todo">
-      <ul v-for="(item, index) in todos">
-        <li>{{ item }}　<button @click="remove(index)">remove</button></li>
-      </ul>
-      <div>
-        <input @keyup.enter="add"/>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -24,7 +16,7 @@
 export default{
   data () {
     return {
-      title: 'This is nuxt todo list'
+      title: 'This is counter sample.'
     }
   },
   computed: {
